@@ -1,0 +1,41 @@
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--backgroundsecondary);
+  height: 108px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  z-index: 999;
+}
+
+.menu-icon {
+  border: 0;
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #757575;
+}
+
+.icon-wrapper {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-icon {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}

@@ -1,0 +1,41 @@
+.tabs-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 16px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabs-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  height: 64px;
+  margin: 17px 0;
+}
+
+.tabs-btn {
+  flex-shrink: 0;
+  padding: 21px 27px;
+  border-radius: 20px;
+  background-color: var(--backgroundsecondary);
+  border: none;
+  color: #707579;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs-btn.active {
+  background-color: #00d084;
+  color: white;
+}
+
+.tabs-btn:not(.active):hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
