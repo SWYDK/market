@@ -4,9 +4,9 @@ import productimg from '../../assets/product2.png';
 
 const ProductModal = ({ product, onClose }) => {
   const [closing, setClosing] = useState(false);
-  const initData = window.Telegram?.WebApp?.initData;
-
-  console.log('InitData:', initData);
+  const tg = window.Telegram.WebApp;
+  console.log('InitData:', tg.initData);
+  console.log('Parsed InitDataUnsafe:', tg.initDataUnsafe);
   if (!product) return null;
 
   const handleClose = () => {
