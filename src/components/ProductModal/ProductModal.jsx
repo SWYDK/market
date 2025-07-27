@@ -17,6 +17,16 @@ const ProductModal = ({ product, onClose }) => {
     }
   };
 
+  // Запретить скролл body, когда модалка открыта
+  useEffect(() => {
+    // при монтировании модалки
+    document.body.style.overflow = 'hidden';
+
+    // при размонтировании (закрытии)
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
 
   return (
     <div className="product-modal-overlay" onClick={handleClose}>
